@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: bankist-backend
+    name: bankist
     env: python
     region: oregon
     plan: free
