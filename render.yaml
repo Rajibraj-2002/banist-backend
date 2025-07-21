@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: bankist-backend
+    name: bankist
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn bankist.wsgi:application
