@@ -58,6 +58,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',  # API connect....
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -65,7 +66,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',       # CORS for API connect
 ]
 
 ROOT_URLCONF = 'bankist.urls'
@@ -136,7 +136,7 @@ SIMPLE_JWT = {
 
 
 # CORS for API connect
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = True
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
