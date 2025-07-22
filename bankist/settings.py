@@ -182,8 +182,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ALLOWED_HOSTS = ['banist-backend.onrender.com', 'localhost', '127.0.0.1']
 CORS_ALLOWED_ORIGINS = [
-    'https://banist-frontend.onrender.com',
+    'stalwart-lollipop-bf03f8.netlify.app',
 ]
 CSRF_TRUSTED_ORIGINS = [
-    'https://banist-frontend.onrender.com',
+    'stalwart-lollipop-bf03f8.netlify.app',
 ]
