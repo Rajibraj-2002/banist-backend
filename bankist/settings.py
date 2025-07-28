@@ -102,9 +102,9 @@ WSGI_APPLICATION = 'bankist.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('postgresql://bankist_db_user:nNtWEmlcNDuKu3TFPLBqrO2m3xXJ5prn@dpg-d23paafdiees739t1sa0-a/bankist_db'),
+        default=os.environ.get('DATABASE_URL'),
         conn_max_age=600,
-        ssl_require=True  # Required for Render PostgreSQL
+        ssl_require=True
     )
 }
 
